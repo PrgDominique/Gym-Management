@@ -13,4 +13,8 @@ class Membership extends Model
         'membership_type',
         'membership_price',
     ];
+    public function members()
+    {
+        return $this->belongsTo(Member::class);
+    }
 }
