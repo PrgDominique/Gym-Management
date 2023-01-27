@@ -16,4 +16,14 @@ class Member extends Model
         'trainer_id',
         'membership_id',
     ];
+
+    public function memberships()
+    {
+        return $this->belongsTo(Membership::class);
+    }
+
+    public function trainers()
+    {
+        return $this->belongsTo(Trainer::class);
+    }
 }

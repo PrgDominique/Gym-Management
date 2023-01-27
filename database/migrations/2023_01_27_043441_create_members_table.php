@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('email');
             $table->date('membership_expiration');
             $table->foreignId('trainer_id')->constrained('trainers')->onDelete('cascade');
-            $table->foreignId('membership_id')->constrained('membership')->onDelete('cascade');
+            $table->foreignId('membership_id')->constrained('memberships')->onDelete('cascade');
             $table->timestamps();
         });
     }

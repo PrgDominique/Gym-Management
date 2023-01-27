@@ -4,10 +4,10 @@
     <div class="container p-5 m-5 ">
 
         <h1 class="">Member</h1>
-        <a href={{route('create')}} class="btn btn-primary p-3 m-3 ">Add User</a>
-    <table class="table bg-white">
-        <div class="row m-5">
-                
+        <a href='#' class="btn btn-primary p-3 m-3 ">Add User</a>
+        <table class="table bg-white">
+            <div class="row m-5">
+
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
@@ -18,19 +18,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>qwe</td>
-                        <td>qwe</td>
-                        <td>qwe</td>
-                        <td>qwe</td>
-                        <td class="d-flex gap-3">
-                        
-                            <a href='#' class="btn btn-success">Edit</a>
-                            <a href='#' class="btn btn-danger">Delete</a>
-                        </td>
-                    </tr>
+                    @foreach ($members as $member)
+                        <tr>
+                            <td>{{ member->name }}</td>
+                            <td>{{ member->email }}</td>
+                            <td>{{ member->membership_expiration }}</td>
+
+                            <td class="d-flex gap-3">
+
+                                <a href='#' class="btn btn-success">Edit</a>
+                                <a href='#' class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
-            </table>
-        </div>
+        </table>
+    </div>
     </div>
 @endsection
