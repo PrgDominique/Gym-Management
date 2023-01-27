@@ -5,15 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Member extends Model
+class Membership extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'email',
-        'membership_expiration',
-        'trainer_id',
-        'membership_id',
+        'membership_type',
+        'membership_price',
     ];
 }

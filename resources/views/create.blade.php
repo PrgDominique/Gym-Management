@@ -3,11 +3,11 @@
 @section('content')
     <div class="container p-5 m-5 ">
 
-        <h1 class="">Member</h1>
-        <a href={{route('create')}} class="btn btn-primary p-3 m-3 ">Add User</a>
-    <table class="table bg-white">
+        <h1 class="">Add Member</h1>
         <div class="row m-5">
                 
+                <button class="btn btn-primary p-3 m-3 ">Add User</button>
+            <table class="table bg-white">
                 <thead>
                     <tr>
                         <th scope="col">Name</th>

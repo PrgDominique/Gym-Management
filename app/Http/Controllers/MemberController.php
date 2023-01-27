@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Member;
 use Illuminate\Http\Request;
 
 class MemberController extends Controller
@@ -9,7 +10,8 @@ class MemberController extends Controller
     //
     public function index()
     {
-        
+        $member = Member::latest()->get();
+        return view('index');
     }
     public function create()
     {
