@@ -22,7 +22,7 @@
                         <tr>
                             <td>{{ $member->name }}</td>
                             <td>{{ $member->email }}</td>
-                            <td>{{ $member->membership_type }}</td>
+                            <td>{{ $member->membership->membership_type }}</td>
                             <td>{{ $member->membership_expiration }}</td>
 
                             <td class="d-flex gap-3">

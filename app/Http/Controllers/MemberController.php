@@ -10,10 +10,14 @@ class MemberController extends Controller
     //
     public function index()
     {
-        $member = Member::latest()->get();
+        $member = Member::all();
         return view('index')->with('members', $member);
     }
     public function create()
+    {
+        
+    }
+    public function store()
     {
         
     }

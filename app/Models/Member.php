@@ -19,12 +19,12 @@ class Member extends Model
         'membership_id',
     ];
 
-    public function memberships()
+    public function membership()
     {
         return $this->belongsTo(Membership::class);
     }
 
-    public function trainers()
+    public function trainer()
     {
         return $this->belongsTo(Trainer::class);
     }

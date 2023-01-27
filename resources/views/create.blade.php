@@ -3,7 +3,7 @@
 @section('content')
     <div class="container p-5 m-5 ">
 
-        <h1 class="">Add Member</h1>
+        <h1 class={{ route('index') }}>Add Member</h1>
         <div class="row m-5">
                 
                 <button class="btn btn-primary p-3 m-3 ">Add User</button>
