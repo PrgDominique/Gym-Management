@@ -5,6 +5,7 @@
 
         <a href={{ route('index') }} class=" btn btn-primary padding-3 m-5">Back to homepage</a>
 
+        <form>
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input class="form-control" type="text" id="name">
@@ -21,5 +22,9 @@
                 <option value="2">VIP</option>
               </select>
           </div>
+          <div class="mb-3">
+            <button class="btn btn-primary p-2 mt-5">Submit</button>
+          </div>
+        </form>
     </div>
 @endsection
